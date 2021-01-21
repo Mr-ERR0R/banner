@@ -47,19 +47,13 @@ bashrc2 = '''
 echo "
              𝐖𝐞 𝐃0 𝐍0𝙩 𝗛@𝗰𝙆 𝙩𝙤 𝖨𝗆𝗉𝗋𝖾𝗌𝗌.
                             𝐖𝐞 𝗛@𝗰𝙆 𝘛𝘰 𝑬𝒙𝒑𝒓𝒆𝒔𝒔.
-   ♡ ━━━━━━━━━━━ [♛]𝐌𝐫.ERR0R [♛] ━━━━━━━━━━━━ ♡ " |lolcat
-
-python /data/data/com.termux/files/usr/etc/wlc.py
-if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]; then
-        command_not_found_handle() {
-                /data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
-        }
-fi
-
-#PS1="\\033[1;31mTHBD~#"
+   ♡ ━━━━━━━━━━━ [♛] 𝐌𝐫.ERR0R [♛] ━━━━━━━━━━━━ ♡ " |lolcat
+   
+ \[\e[35m\]'Welcome +name+'\[\e[34m\]  
+#PS1="\\033[1;31mERR0R~#"
 
 PS1="\[\e[1;34m┌──\\a─T─I─M─E─\\a──┐\\033[1;34m\\a┌──\\a─D─A─T─E─\\a───➘\\033[1;34m
-\\a┌─[\\033[1;93m \@\\033[1;34m ]☠[\\033[1;93m \d\\033[1;34m ]\\033[1;34m
+\\a┌─[\\033[1;93m \@\\033[1;34m ] ☠ [\\033[1;93m \d\\033[1;34m ]\\033[1;34m
 \\a├─[\\033[1;32m\w\\033[1;34m]\\033[1;34m
 '''
 
@@ -67,7 +61,7 @@ h2 = open(output+'bash.bashrc', 'w')
 h2.write(bashrc1)
 h2.write("\nfiglet    '    "+name+"' |lolcat\n")
 h2.write(bashrc2)
-h2.write('\[\e[34m\]└─☞\[\e[35m\]'+name+'\[\e[34m\][√]:☛\[\e[1;32m\] "\n')
+h2.write('\[\e[34m\]└───━≫\[\e[35m\]'+name+'\[\e[34m\][⇶]:➔\[\e[1;32m\] "\n')
 h2.write('echo -e "\e[6 q"')
 h2.close()
 print('DONE')
